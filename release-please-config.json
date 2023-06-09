@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+    "bootstrap-sha": "35c84866c078223b3a6b3179e213ed5ddd5a4d24",
+    "monorepo-tags": true,
+    "release-type": "go",
+    "changelog-sections": [
+        { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
+        { "type": "ci", "section": "Continuous Integration" },
+        { "type": "docs", "section": "Documentation 📝" },
+        { "type": "feat", "section": "Features ✨" },
+        { "type": "feature", "section": "Features ✨" },
+        { "type": "fix", "section": "Bug Fixes 🐞" },
+        { "type": "perf", "section": "Performance Improvements ⚡️" },
+        { "type": "style", "section": "Styles 🎨" }
+    ],
+    "packages": {
+        ".": {
+
+        }
+    }
+}
