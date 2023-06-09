@@ -25,22 +25,11 @@
     background: transparent;
     color: var(--#{$prefix}secondary);
     height: 100%;
-    opacity: 0;
     position: absolute;
-    width: 80px;
+    width: 60px;
 
     &:hover {
         color: var(--#{$prefix}primary);
-    }
-}
-
-.slide {
-    &:hover,
-    &:focus {
-        .slide-control-left,
-        .slide-control-right {
-            opacity: 1;
-        }
     }
 }
 
