@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/slide/compare/v0.2.0...v0.3.0) (2023-10-22)
+
+
+### Features ✨
+
+* **i18n:** create ms.toml ([#14](https://github.com/hbstack/slide/issues/14)) ([a8206f7](https://github.com/hbstack/slide/commit/a8206f7148238a3c01e5d3b25dcb38bc07300c81))
+
 ## [0.2.0](https://github.com/hbstack/slide/compare/v0.1.0...v0.2.0) (2023-06-09)
 
 
