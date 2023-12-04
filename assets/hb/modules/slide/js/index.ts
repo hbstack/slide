@@ -33,10 +33,10 @@
       let startX = 0
       el.addEventListener('touchstart', (e: TouchEvent) => {
         startX = e.touches[0].clientX
-      })
+      }, { passive: true })
       el.addEventListener('touchend', (e: TouchEvent) => {
         scroll(el, e.changedTouches[0].clientX > startX ? 'left' : 'right')
-      })
+      }, { passive: true })
     })
   })
 })()
