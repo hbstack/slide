@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/hbstack/slide/compare/v0.3.0...v0.3.1) (2023-12-04)
+
+
+### Performance Improvements ⚡️
+
+* mark event listeners as passive ([f054f2f](https://github.com/hbstack/slide/commit/f054f2f06ffb2c320abf0a1821bfee00ea6f326f))
+
 ## [0.3.0](https://github.com/hbstack/slide/compare/v0.2.0...v0.3.0) (2023-10-22)
 
 
