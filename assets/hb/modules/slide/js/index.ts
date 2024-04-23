@@ -1,19 +1,36 @@
 (() => {
   'use strict'
 
+  let scrolling = false
+
   const scroll = (element: HTMLElement, dir: string): void => {
+    if (scrolling) {
+      return
+    }
+    scrolling = true
+
     const inner = element.parentElement?.querySelector('.slide-inner') as HTMLElement
     const step = inner.offsetWidth
     let left = 0
     if (dir === 'left') {
       left = inner.scrollLeft - step
     } else {
-      left = inner.scrollLeft + step
+      left = Math.min(inner.scrollWidth - inner.clientWidth, inner.scrollLeft + step)
     }
+    if (left <= 0) {
+      scrolling = false
+      return
+    }
+
     inner.scroll({
-      left,
-      behavior: 'smooth'
+      left
     })
+    const checker = setInterval(() => {
+      if (left === inner.scrollLeft) {
+        scrolling = false
+        clearInterval(checker)
+      }
+    }, 50)
   }
 
   document.addEventListener('DOMContentLoaded', () => {
