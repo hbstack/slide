@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/hbstack/slide/compare/v0.3.1...v0.3.2) (2024-04-23)
+
+
+### Bug Fixes 🐞
+
+* scroll offset when double clicking ([#41](https://github.com/hbstack/slide/issues/41)) ([84bdd58](https://github.com/hbstack/slide/commit/84bdd58392ec44fa11c27d9f66cc43f4c7f45f6b))
+
 ## [0.3.1](https://github.com/hbstack/slide/compare/v0.3.0...v0.3.1) (2023-12-04)
 
 
