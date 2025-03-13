@@ -13,20 +13,16 @@
     const step = inner.offsetWidth
     let left = 0
     if (dir === 'left') {
-      left = inner.scrollLeft - step
+      left = Math.max(inner.scrollLeft - step, 0 - inner.scrollLeft)
     } else {
       left = Math.min(inner.scrollWidth - inner.clientWidth, inner.scrollLeft + step)
-    }
-    if (left <= 0) {
-      scrolling = false
-      return
     }
 
     inner.scroll({
       left
     })
     const checker = setInterval(() => {
-      if (left === inner.scrollLeft) {
+      if (left === inner.scrollLeft || inner.scrollLeft === 0) {
         scrolling = false
         clearInterval(checker)
       }
