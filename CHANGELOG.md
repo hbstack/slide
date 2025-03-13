@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/hbstack/slide/compare/v0.4.0...v0.4.1) (2025-03-13)
+
+
+### Bug Fixes 🐞
+
+* prevent stuck left-scroll due to negative value ([#56](https://github.com/hbstack/slide/issues/56)) ([e5264f1](https://github.com/hbstack/slide/commit/e5264f1a6693f5ba89da171fb524527145115d59))
+
 ## [0.4.0](https://github.com/hbstack/slide/compare/v0.3.2...v0.4.0) (2024-05-28)
 
 
